@@ -29,15 +29,6 @@ function checkUsername() {
     }, 1000);
 }
 
-// Pop-Up Ad Logic (Show after 5 seconds)
-setTimeout(() => {
-    document.getElementById('popupAd').classList.remove('hidden');
-}, 5000);
-
-function closePopup() {
-    document.getElementById('popupAd').classList.add('hidden');
-}
-
 // Sticky Header on Scroll
 window.addEventListener('scroll', () => {
     const header = document.querySelector('header');
