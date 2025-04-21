@@ -1,0 +1,45 @@
+/* Custom styles to enhance Tailwind CSS */
+body {
+    scroll-behavior: smooth;
+}
+
+.ad-space {
+    border: 1px dashed #4a5568;
+    border-radius: 8px;
+}
+
+header {
+    transition: all 0.3s ease;
+}
+
+header.scrolled {
+    background-color: rgba(31, 41, 55, 0.9);
+}
+
+.animate-pulse {
+    animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+    0% { opacity: 1; }
+    50% { opacity: 0.5; }
+    100% { opacity: 1; }
+}
+
+section {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#popupAd {
+    z-index: 1000;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .ad-space {
+        height: 100px !important;
+    }
+}
