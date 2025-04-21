@@ -33,10 +33,6 @@ section {
     justify-content: center;
 }
 
-#popupAd {
-    z-index: 1000;
-}
-
 /* Responsive adjustments */
 @media (max-width: 768px) {
     .ad-space {
