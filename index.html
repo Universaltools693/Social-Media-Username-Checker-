@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Social Media Username Checker - UltraPro Tool</title>
+    <meta name="description" content="Check the availability of usernames across multiple social media platforms with our advanced tool. Fast, reliable, and user-friendly.">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-gray-900 text-white font-sans">
+    <!-- Header -->
+    <header class="fixed top-0 w-full bg-gray-800 shadow-lg z-50">
+        <nav class="container mx-auto flex justify-between items-center py-4 px-6">
+            <h1 class="text-2xl font-bold">UltraPro Username Checker</h1>
+            <ul class="flex space-x-6">
+                <li><a href="#home" class="hover:text-blue-400">Home</a></li>
+                <li><a href="#about" class="hover:text-blue-400">About</a></li>
+                <li><a href="#tool" class="hover:text-blue-400">Tool</a></li>
+                <li><a href="#contact" class="hover:text-blue-400">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="min-h-screen flex items-center justify-center bg-gradient-to-r from-blue-900 to-purple-900">
+        <div class="container mx-auto text-center px-6">
+            <h2 class="text-5xl font-extrabold mb-4 animate-pulse">Discover Username Availability Instantly</h2>
+            <p class="text-xl mb-8">Our cutting-edge tool checks username availability across major social media platforms in seconds.</p>
+            <!-- Ad Space (Banner) -->
+            <div class="ad-space bg-gray-700 h-32 flex items-center justify-center mb-8">
+                <p class="text-gray-400">[Banner Ad Placeholder]</p>
+            </div>
+            <a href="#tool" class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-6 rounded-full">Try the Tool Now</a>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 bg-gray-800">
+        <div class="container mx-auto px-6">
+            <h3 class="text-4xl font-bold text-center mb-12">Why Choose Our Tool?</h3>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="p-6 bg-gray-700 rounded-lg shadow-lg">
+                    <h4 class="text-2xl font-semibold mb-4">Lightning Fast</h4>
+                    <p>Our tool delivers results in real-time, saving you time and effort.</p>
+                </div>
+                <div class="p-6 bg-gray-700 rounded-lg shadow-lg">
+                    <h4 class="text-2xl font-semibold mb-4">Multi-Platform</h4>
+                    <p>Check usernames across platforms like Twitter, Instagram, TikTok, and more.</p>
+                </div>
+                <div class="p-6 bg-gray-700 rounded-lg shadow-lg">
+                    <h4 class="text-2xl font-semibold mb-4">User-Friendly</h4>
+                    <p>Designed with a sleek, intuitive interface for seamless navigation.</p>
+                </div>
+            </div>
+            <!-- Ad Space (Interstitial) -->
+            <div class="ad-space bg-gray-700 h-48 flex items-center justify-center my-12">
+                <p class="text-gray-400">[Interstitial Ad Placeholder]</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tool Section -->
+    <section id="tool" class="py-20 bg-gray-900">
+        <div class="container mx-auto px-6 text-center">
+            <h3 class="text-4xl font-bold mb-12">Username Checker Tool</h3>
+            <div class="max-w-lg mx-auto bg-gray-800 p-8 rounded-lg shadow-lg">
+                <input type="text" id="usernameInput" placeholder="Enter username" class="w-full p-4 mb-4 bg-gray-700 rounded-lg text-white">
+                <button onclick="checkUsername()" class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-6 rounded-full w-full">Check Availability</button>
+                <div id="result" class="mt-6"></div>
+            </div>
+            <!-- Ad Space (Banner Below Tool) -->
+            <div class="ad-space bg-gray-700 h-32 flex items-center justify-center mt-12">
+                <p class="text-gray-400">[Banner Ad Placeholder]</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-gray-800">
+        <div class="container mx-auto px-6 text-center">
+            <h3 class="text-4xl font-bold mb-12">Get in Touch</h3>
+            <p class="text-xl mb-8">Have questions or feedback? Reach out to us!</p>
+            <a href="mailto:support@ultraprousernamechecker.com" class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-6 rounded-full">Contact Us</a>
+            <!-- Ad Space (Footer Banner) -->
+            <div class="ad-space bg-gray-700 h-32 flex items-center justify-center mt-12">
+                <p class="text-gray-400">[Footer Banner Ad Placeholder]</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 py-6">
+        <div class="container mx-auto text-center px-6">
+            <p>&copy; 2025 UltraPro Username Checker. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Pop-Up Ad Placeholder (Hidden by Default) -->
+    <div id="popupAd" class="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center hidden">
+        <div class="bg-gray-700 p-8 rounded-lg">
+            <p class="text-gray-400">[Pop-Up Ad Placeholder]</p>
+            <button onclick="closePopup()" class="mt-4 bg-blue-600 hover:bg-blue-700 text-white py-2 px-4 rounded">Close</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
